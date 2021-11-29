@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* position fixed */
+.menu{
+    height: 70px;
+    width: 100%;
+    background: rgb(35, 19, 179);
+    position: fixed;
+    top:0px;
+    z-index: 99999999999;
+    display: none;
+}
+
+.test{
+    margin-top: 70px;
+}
+
+
+
+/* position relative */
+.result{}
+.result .round-class{
+    height: 160px;
+    width: 160px;
+    background: rgba(219, 73, 154, 1);
+    display: block;
+    margin: auto;
+    border:30px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    bottom: -110px;
+}
+.result .rectangle-class{
+    width: 90%;
+    height: 400px;
+    background: rgba(237, 164, 204, 1);
+    display: block;
+    margin: auto;
+}
+
+
+
+/* Position absolute */
+.abs{
+    margin-top: 200px;
+    position: relative;
+}
+
+.abs .round-class{
+    height: 160px;
+    width: 160px;
+    background: red;
+    display: block;
+    border:30px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    top: -110px;
+}
+.abs .rectangle-class{
+    width: 90%;
+    height: 400px;
+    background: green;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* position sticky */
+.sticky-menu{
+    height: 70px;
+    width: 100%;
+    background: gold;
+    position: sticky;
+    bottom:0px;
+    top: 50px;
+}
